@@ -1,7 +1,7 @@
 # GIT
 ## 1.创建本地代码库
-    $ git init                      新建本地仓库<br />
-    $ git clone [url]               从远程仓库克隆<br />
+    $ git init                      新建本地仓库
+    $ git clone [url]               从远程仓库克隆
 
 ## 2.配置
     $ git config                    显示git配置
