@@ -35,3 +35,8 @@
     $ git fetch     从远程获取更新到本地
     $ git pull      从远程获取更新到本地并merge到本地
     $ git push origin [branche]     推送到指定分支，默认master分支
+
+## 7.连接
+    $ git remote add origin [url]   本地仓库与远程仓库建立连接
+    $ git push -u origin master     推送到远程仓库并于远程仓库的master分支建立连接
+    $ git remote rm origin      删除本地仓库与远程仓库的连接
