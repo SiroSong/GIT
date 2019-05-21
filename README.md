@@ -35,15 +35,23 @@
     $ git fetch     从远程获取更新到本地
     $ git pull      从远程获取更新到本地并merge到本地
     $ git push origin [branche]     推送到指定分支，默认master分支
+    
     > 创建并拉取远程分支
+    
     $ git checkout -b [newbranch] origin/[remotebranch]
+    
     #### or
+    
     $ git checkout -b [newbranch]
     $ git pull origin [remotebranch]
+    
     > 创建并推送之远程分支
+    
     $ git checkout -b [newbranch]
     $ git pull origin [remotebranch]
+    
     > 远程分支覆盖本地分支
+    
     $ git fetch --all
     $ git reset --hard origin/[remotebranch]
     $ git pull
