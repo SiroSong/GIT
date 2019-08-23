@@ -81,7 +81,11 @@
 
 > 切换到上一分支
 
-    $ git checkout -    
+    $ git checkout -
+
+> 删除本地分支
+
+    $ git branch -D [branch]
 
 ## 6.同步
 
