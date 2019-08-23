@@ -145,3 +145,11 @@
 > 删除本地仓库与远程仓库的连接
 
     $ git remote rm origin      
+
+## 8.冲突
+
+> 多人协同, 本地线上代码同步并处理可能出现的冲突
+
+    $ git stash
+    $ git pull
+    $ git stash pop
