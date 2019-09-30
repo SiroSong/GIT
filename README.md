@@ -87,6 +87,11 @@
 
     $ git branch -D [branch]
 
+> 删除远程分支
+
+    $ git branch -r -d origin/branch-name   // 删除了本地的远程分支跟踪
+    $ git push origin :branch-name    //删除远程分支
+
 ## 6.同步
 
 > 更新远程仓库
