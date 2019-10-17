@@ -158,3 +158,9 @@
     $ git stash
     $ git pull
     $ git stash pop
+
+## 9.追踪
+
+> 为本地分支建立远程分支追踪
+
+    $ git push --set-upstream origin [branch_name]
