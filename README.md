@@ -161,6 +161,10 @@
 
 ## 9.追踪
 
-> 为本地分支建立远程分支追踪
+> 推送时为本地分支建立远程分支追踪
 
     $ git push --set-upstream origin [branch_name]
+
+> 为本地分支建立远程分支追踪
+
+    $ git branch --set-upstream-to=origin/[branch_name] feature-expert
