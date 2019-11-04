@@ -167,4 +167,4 @@
 
 > 为本地分支建立远程分支追踪
 
-    $ git branch --set-upstream-to=origin/[branch_name] feature-expert
+    $ git branch --set-upstream-to=origin/[remoteBranch_name] [lcoalBranch_name]
