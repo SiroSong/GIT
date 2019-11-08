@@ -179,7 +179,7 @@
     
     git checkout [local_branch_name]
 
-> 3.提交分支数据到远程服务器(一般当前如果不在该分支时，使用这种方式提交。如果当前在 branch_abc 分支下，也可以直接提交git push)
+> 3.提交分支数据到远程服务器(一般当前如果不在该分支时，使用这种方式提交。如果当前在该local_branch_name分支下，也可以直接提交git push --set-upstream origin origin_branch_name, 就可省略步骤4)
 
     git push origin [local_branch_name]:[origin_branch_name]
 
