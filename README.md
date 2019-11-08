@@ -168,3 +168,21 @@
 > 为本地分支建立远程分支追踪
 
     $ git branch --set-upstream-to=origin/[remoteBranch_name] [lcoalBranch_name]
+
+## 10.Git 本地创建分支并提交远程分支
+
+> 1.创建本地分支
+
+    git branch [local_branch_name]
+
+> 2.切换到该分支
+    
+    git checkout [local_branch_name]
+
+> 3.提交分支数据到远程服务器(一般当前如果不在该分支时，使用这种方式提交。如果当前在 branch_abc 分支下，也可以直接提交git push)
+
+    git push origin [local_branch_name]:[origin_branch_name]
+
+> 4.本地分支与远程分支建立追踪
+
+    git branch --set-upstream-to=origin/[origin_branch_name] [local_branch_name]
