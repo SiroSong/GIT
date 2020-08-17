@@ -52,7 +52,12 @@
 
 > 提交工作区自上次commit之后的变化直接到仓库区
 
-    $ git commit -a     
+    $ git commit -a
+
+> 快捷提交
+
+    $ git acm 'commit message'
+
 ## 5.分支
 
 > 列出所有分支
@@ -176,16 +181,24 @@
 
 > 1.创建本地分支
 
-    git branch [local_branch_name]
+    $ git branch [local_branch_name]
 
 > 2.切换到该分支
     
-    git checkout [local_branch_name]
+    $ git checkout [local_branch_name]
 
 > 3.提交分支数据到远程服务器(一般当前如果不在该分支时，使用这种方式提交。如果当前在该local_branch_name分支下，也可以直接提交git push --set-upstream origin [origin_branch_name], 就可省略步骤4)
 
-    git push origin [local_branch_name]:[origin_branch_name]
+    $ git push origin [local_branch_name]:[origin_branch_name]
 
 > 4.本地分支与远程分支建立追踪
 
-    git branch --set-upstream-to=origin/[origin_branch_name] [local_branch_name]
+    $ git branch --set-upstream-to=origin/[origin_branch_name] [local_branch_name]
+
+## 11.查看记录
+
+    $ git log [-numbers]
+    $ git l
+    $ git ll
+    $ git lg
+    $ git llg
