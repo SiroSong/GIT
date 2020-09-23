@@ -123,7 +123,7 @@
 
     $ git push origin [branche]     
 
-> 创建并拉取远程分支
+> 创建并拉取远程分支(使用第一种方式会自动建立追踪)
 
     $ git checkout -b [newbranch] origin/[remotebranch] 
 
@@ -154,7 +154,15 @@
 
 > 删除本地仓库与远程仓库的连接
 
-    $ git remote rm origin      
+    $ git remote rm origin
+
+> 推送时为本地分支建立远程分支追踪
+
+    $ git push --set-upstream origin [branch_name]
+
+> 为本地分支建立远程分支追踪
+
+    $ git branch --set-upstream-to=origin/[remoteBranch_name] [lcoalBranch_name]
 
 ## 8.冲突
 
@@ -167,17 +175,7 @@
     
     $ git stash pop // 将本地更新在缓存队列中取出(合并冲突)
 
-## 9.追踪
-
-> 推送时为本地分支建立远程分支追踪
-
-    $ git push --set-upstream origin [branch_name]
-
-> 为本地分支建立远程分支追踪
-
-    $ git branch --set-upstream-to=origin/[remoteBranch_name] [lcoalBranch_name]
-
-## 10.Git 本地创建分支并提交远程分支
+## 9.Git 本地创建分支并提交远程分支
 
 > 1.创建本地分支
 
@@ -195,7 +193,7 @@
 
     $ git branch --set-upstream-to=origin/[origin_branch_name] [local_branch_name]
 
-## 11.查看记录
+## 10.查看记录
 
     $ git log [-numbers]
     $ git l
