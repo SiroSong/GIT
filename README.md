@@ -200,3 +200,10 @@
     $ git ll
     $ git lg
     $ git llg
+
+## 11.忽略文件
+
+> 使已追踪的文件被忽略
+
+    $ git rm -r --cached
+    $ git acm 'up .ingnore'
