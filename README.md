@@ -143,6 +143,10 @@
     $ git reset --hard origin/[remotebranch]
     $ git pull
 
+> 强制推送本地代码同步到远程
+
+    git push --force
+
 ## 7.连接
 > 本地仓库与远程仓库建立连接
 
@@ -168,7 +172,6 @@
 
 > 多人协同, 本地线上代码同步并处理可能出现的冲突
 
-    
     $ git stash // 缓存本地所有更改
     
     $ git pull  // 拉取并合并线上代码
@@ -207,3 +210,9 @@
 
     $ git rm -r --cached
     $ git acm 'up .ingnore'
+
+## 12.代码回退
+
+    $ git reset --hard HEAD^         回退到上个版本
+    $ git reset --hard HEAD~3        回退到前3次提交之前，以此类推，回退到n次提交之前
+    $ git reset --hard commit_id     退到/进到 指定commit的sha码
